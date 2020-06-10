@@ -1,1 +1,0 @@
-No exercises in this section
