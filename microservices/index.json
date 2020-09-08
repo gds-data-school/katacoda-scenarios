@@ -1,0 +1,56 @@
+{
+  "title": "Docker Microservices",
+  "description": "Docker MS Workshop",
+  "difficulty": "Intermediate",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Build a Microservice Container with Docker",
+        "text": "step1.md"
+      },
+      {
+        "title": "Update a Microservice Container with Docker",
+        "text": "step2.md"
+      },
+      {
+        "title": "Deploy the Container on Kubernetes",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "Dockerfile",
+          "target": "/root/server-hello"
+        },
+        {
+          "file": "src/requirements.txt",
+          "target": "/root/server-hello/src"
+        },
+        {
+          "file": "src/app/server.py",
+          "target": "/root/server-hello/src/app"
+        },
+        {
+          "file": "infra/deployment.yaml",
+          "target": "/root/server-hello/infra"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "minikube"
+  }
+}
