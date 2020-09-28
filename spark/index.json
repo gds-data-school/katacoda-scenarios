@@ -1,0 +1,63 @@
+{
+  "title": "Spark Hello World Scenario",
+  "description": "Data School Spark Scenario",
+  "difficulty": "intermediate",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Install Spark standalone",
+        "text": "steps/step1_install.md"
+      },
+      {
+        "title": "Step 2 - Word Count",
+        "text": "steps/step2_wordcount.md",
+        "answer": "steps/step2_wordcount_answer.md"
+      },
+      {
+        "title": "Step 2 - Dataframes",
+        "text": "steps/step3_dataframes.md",
+        "answer": "steps/step3_dataframes_answer.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "spark_install.sh",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "wikienel.txt",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "departments.csv",
+          "target": "/root/",
+          "chmod": "+x"
+        },
+        {
+          "file": "employees.json",
+          "target": "/root/",
+          "chmod": "+x"
+        }
+      ]
+    },
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": ["editor.txt"],
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Spark Shell using `pyspark`\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}
