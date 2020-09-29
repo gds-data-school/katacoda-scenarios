@@ -18,9 +18,9 @@ mapped = splitted.map(lambda word: (word, 1))
 # for each key, compute the sum of the values
 counts = mapped.reduceByKey(lambda a, b: a + b)
 
-# collect the results or save them into HDFS
+# collect the results
 sorted_counts = counts.sortBy(lambda x: x[1], ascending=False)
-sorted_counts.collect()
+sorted_counts.collect()[:20]
 ```
 
 
