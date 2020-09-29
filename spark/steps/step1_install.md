@@ -1,12 +1,8 @@
-This is your first step.
+In this step you will install a single node standalone Spark cluster.
 
 ## Task
 
-This is an _example_ of creating a scenario and running a **command**
-
-`echo 'Hello World'`{{execute}}
-
-Install Java8 and Spark standalone. This should take a few minutes. Run
+Install Java8 and Spark standalone. This will take a few minutes. Run
 
 `./spark_install.sh`{{execute}}
 
