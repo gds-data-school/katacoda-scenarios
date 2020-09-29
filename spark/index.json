@@ -1,8 +1,8 @@
 {
-  "title": "Spark Hello World Scenario",
+  "title": "Spark Scenario",
   "description": "Data School Spark Scenario",
   "difficulty": "intermediate",
-  "time": "20 minutes",
+  "time": "30 minutes",
   "details": {
     "steps": [
       {
@@ -52,9 +52,8 @@
       "text": "finish.md"
     }
   },
-  "files": ["editor.txt"],
   "environment": {
-    "uilayout": "editor-terminal",
+    "uilayout": "terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Spark Shell using `pyspark`\u001b[m\r\n"
   },
   "backend": {
