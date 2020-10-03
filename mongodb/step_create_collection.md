@@ -7,7 +7,8 @@ where a document is the item stored in mongo.
 The aim of this step is to create a collection
 in a new db called *users* with your id `<ID>` and 
 your name  `<NAME>`. 
-In the mongo cli use the following command
+
+In the mongo cli (remember to enter with the `mongo` command) use the following command
 ```
 > use users
 ```
