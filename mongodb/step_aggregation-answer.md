@@ -45,6 +45,7 @@ An alternative solution could be
 
 ### Exercise 5
 ```
+# let's do the aggregation
 > db.movies.aggregate([
 	{$unwind:"$cast"},
 	{$match:{"cast":{$ne:"and"}}},
@@ -52,17 +53,29 @@ An alternative solution could be
 	{$sort:{"counts":-1}},
 	{$out:"top_actors"}
   ])
+
+# we can see show the list of the collections for the database
+> show collections
+
+# then we can query the new collection
+> db.top_actors.find()
 ```
-### Exercise 6
+### Exercise 6 
+You can filter more dirty data in the match stages. In this example we inserted 2 stages, for learning purpose: the first filters out specific words, the second filters by a regex pattern. You can use regex pattern anywhere in the matching criterias
 ```
 > db.movies.aggregate([
 	{$unwind:"$cast"},
 	{$unwind:"$genres"},
-	{$match:{"cast":{$ne:"and"}}},
+	{$match:{"cast":{"$nin": ["and", "or", "...other stopwords..." ]}}},
+	{$match:{"cast":{"$in": [ /^[A-Za-z].*/ ]}}},
 	{$group:{_id:{actor:"$cast",genre:"$genres"},count_movies:{$sum:1},list_movies:{$addToSet:"$title"}}},
 	{$project:{actor:"$_id.actor",genre:"$_id.genre",count_movies:1,list_movies:1}},
 	{$project:{_id:0}},
-	{$sort:{"actor":1,"genre":1}},
+	{$sort:{"count_movies":-1,"actor":1,"genre":1}},
 	{$out:"actors_and_genres"}
   ])
 ```
+
+To create an index use the following command:
+`db.movies.createIndex({"cast":1})`
+
