@@ -1,6 +1,6 @@
 # Import and export data
-Here we discuss two useful command available in the
-shell to manage large dataset:
+Here we show two useful commands available in the
+shell to manage large datasets:
 
 1. `mongoexport` is a command-line tool that produces a JSON or CSV export 
 of data stored in a `MongoDB` instance.
