@@ -14,6 +14,7 @@ To show the content of the script use for instance `cat installer.sh`.
 
 At the end of the installation you should be
 able to open the command line interface (cli).
+
 In the terminal just type
 `mongo` to launch the console.
 
