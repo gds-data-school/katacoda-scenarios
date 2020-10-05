@@ -11,7 +11,9 @@ export created by `mongoexport`, or potentially, another third-party export tool
 
 Guide: https://docs.mongodb.com/v4.2/reference/program/mongoimport/
 
-*Tip:* `mongoimport` *is a command that you need to run outside the mongo shell.*
+*Tips:*
+`mongoimport` is a command that you need to run outside the mongo shell.
+You need to use the following parameters, search for the inside the documentation: `db`  the target database,  `collection`  the target collection, `file` the file with data to import,  `drop` if you want to first drop the target collection; `type` if you want to specify you are importing a csv file, `headerline` if you are importing a csv and want to specify that the first row of the file is a header.
 
 ### Exercise 1 
 Import json:
@@ -21,7 +23,7 @@ json file `/root/datasets/movies_limited.json`. Use the `mongoimport` command.
 rows of your new collection. There should be 16 documents.
 
 
-### Exercise 2 
+### Exercise 2 (optional)
 Import csv:
 1. Create a new collection `cities` in the db `databases` 
 by importing the csv file `datasets/cities.csv`. 
@@ -52,7 +54,7 @@ Export as json:
 json file in the folder `exported_data`. Use the `mongoexport` command.
 2. Check if the file has been created and read its content.
 
-### Exercise 5
+### Exercise 5 (optional)
 Export as csv:
 1. Export the collection `datasets.movies` and store it as a csv file 
 in the folder `exported_data`. 
