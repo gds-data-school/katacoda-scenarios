@@ -27,7 +27,7 @@ manipulation.
 
 In this example we perform a join on the `customerid`
 ```
-> db.item_ordered.aggregate([
+> db.items_ordered.aggregate([
     // first stage in the pipe
     {
         $lookup: {
@@ -53,8 +53,8 @@ of the customer is Colorado, can you do this?
 
 In SQL the query should look like
 ```postgres-psql
-SELECT item_ordered.item 
+SELECT items_ordered.item 
 FROM customer, item_ordered
-WHERE customer.customerid = item_ordered.customerid
+WHERE customer.customerid = items_ordered.customerid
 AND customer.state = 'Colorado'
 ```
