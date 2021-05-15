@@ -75,7 +75,7 @@ You can filter more dirty data in the match stages. In this example we inserted 
 	{$out:"actors_and_genres"}
   ])
 ```
-
+### Exercise 7 
 To create an index use the following command:
 `db.movies.createIndex({"cast":1})`
 
