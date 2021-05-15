@@ -13,6 +13,9 @@ links:
  * [$project](https://docs.mongodb.com/manual/reference/operator/aggregation/project/)
 
 
+You can also use the queries showed during the demo of the Data School, as a reference. You can find them inside the file section of the Teams channel, or [here](https://teams.microsoft.com/l/file/1FB9C1FE-A577-4328-9448-FE5DB083EEE2?tenantId=d539d4bf-5610-471a-afc2-1c76685cfefa&fileType=pdf&objectUrl=https%3A%2F%2Fenelcom.sharepoint.com%2Fsites%2FDataSchool2021-8-DataArchitectures%2FShared%20Documents%2F8-%20Data%20Architectures%2F20_05_21%20Day%203%2FMongoDB%20Bignami.pdf&baseUrl=https%3A%2F%2Fenelcom.sharepoint.com%2Fsites%2FDataSchool2021-8-DataArchitectures&serviceName=teams&threadId=19:368a1bee354a4de1a31a55a5332c4165@thread.tacv2&groupId=3ee0ba87-30fc-4a39-aa94-e4758329b168).
+
+
 In order to test the `aggregate` pipeline we use 
 data collected in the databases already loaded within
 the `mongoimport` command.
@@ -23,7 +26,7 @@ the `mongoimport` command.
 `> use datasets`
 
 ### Exercise 1
-Get all the movies with the actor Bruce Willis and with action genre, ordered by year (descending)
+**Get all the movies with the actor Bruce Willis and with action genre, ordered by year (descending)**
 
 *Optional: this data can be achieved by only using find instead of the aggregation. 
 Write a query with aggregation and a query with find.*
@@ -31,7 +34,7 @@ Write a query with aggregation and a query with find.*
 Hint: the aggregation could may have this structure.
 The `$match` aggregator operator and the `$sort` 
 aggregator operator have the same syntax of the correspondant match and sort operators of the find query.
-**You can use a text editor to create the pipeline, and a tool to validate the pipeline array, like https://jsonlint.com/ (ex. `"pipeline":[<your array of stages>]`)**
+**You can use a text editor to create the pipeline, and a tool to validate the pipeline array, like https://codebeautify.org/jsonviewer/cbad73ae or https://jsonlint.com/ (ex. `"pipeline":[<your array of stages>]`)**
 
 Structure:
 ```
@@ -49,8 +52,8 @@ You can build the aggregation using this template:
 
 
 ### Exercise 2
-Create an aggregation to count the movies in which 
-acted Mack Sennett.
+**Create an aggregation to count the movies in which 
+acted Mack Sennett.**
 
 The expected output and structure is:
 ```
@@ -76,8 +79,8 @@ structure have the following structure:
 ```
 
 ### Exercise 3
-Create an aggregation query to get all the actors 
-ordered by the descending count of the movies in which they acted.
+**Create an aggregation query to get all the actors 
+ordered by the descending count of the movies in which they acted.**
 
 The output must have this first line, with this structure
 ```
@@ -89,24 +92,24 @@ of one actor you need to use the `$unwind` operator, see for
 instance this [guide](https://docs.mongodb.com/manual/reference/operator/aggregation/unwind/).
 
 ### Exercise 4 
-Clean data: in the previous solution there's the word *and* as an actor. 
+Clean data: in the previous solution there's the word *"and"* as an actor. 
 That's because the dataset contains dirty documents. 
 
-Filter the `actor` named *and* out from the output by modifying the previous aggregation query.
+**Filter the `actor` named *"and"* out from the output by modifying the previous aggregation query.**
 
 
 ### Exercise 5
-Save the result of the previous exercise 
+**Save the result of the previous exercise 
 to a new collection named `top_actors` 
-in a new db `aggregations`.
+in a new db `aggregations`.**
 
 Hint: modify the previous query and use the `$out` aggregation operator. 
 Like the others operators, you can find its guide in the `MongoDB` official [documentation](https://docs.mongodb.com/manual/reference/operator/aggregation/out/).
 
-### Exercise 6 (optional, do to this exercise if you finish all the scenario, including the next steps!)
-Create a new `aggregations.actors_genres` collection, 
+### Exercise 6 (optional)
+**Create a new `aggregations.actors_genres` collection, 
 in which is stored the list and the count of the movies grouped 
-by actor and genre, sorted by the count (desc), actor (asc) and genre (asc).
+by actor and genre, sorted by the count (desc), actor (asc) and genre (asc).**
 
 The final result and structure must be the like following:
 ```
@@ -117,5 +120,6 @@ The final result and structure must be the like following:
 Hint: to obtain the `list_movies` field consult the `$group` operator [guide](https://docs.mongodb.com/manual/reference/operator/aggregation/group/).
 Tip: add the $out operator to the pipeline only when you're satisfied with the result.
 
+### Exercise 7 (optional)
 You will notice (especially if you are using regex to filter out dirty records) that the query runs a bit slow.
-[Create an index](https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/) on the 'cast' field and run again the query. You will notice that the query will run a lot faster.
+**[Create an index](https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/) on the 'cast' field and run again the query. You will notice that the query will run a lot faster.**
