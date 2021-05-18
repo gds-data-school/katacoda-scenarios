@@ -123,6 +123,7 @@ That's because the dataset contains dirty documents.
 
 **Filter the `actor` named *"and"* out from the output by modifying the previous aggregation query.**
 
+*Hint: use `$ne` or `$nin` operator in the `$match` step*
 
 ### Exercise 5
 **Save the result of the previous exercise 
@@ -143,7 +144,7 @@ The final result and structure must be the like following:
 ```
 *Optional: you can filter out some output dirty records you find by using $nin operator or regex*
 
-Hint: to obtain the `list_movies` field consult the `$group` operator [guide](https://docs.mongodb.com/manual/reference/operator/aggregation/group/).
+Hint: to obtain the `list_movies` field consult the `$group` operator [guide](https://docs.mongodb.com/manual/reference/operator/aggregation/addToSet/#mongodb-group-grp.-addToSet).
 Tip: add the $out operator to the pipeline only when you're satisfied with the result.
 
 ### Exercise 7 (optional)
