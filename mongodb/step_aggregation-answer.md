@@ -3,7 +3,7 @@
 > db.movies.aggregate([
     {$match:{"genres":"Action", cast:"Bruce Willis"}},
     {$sort: {year:-1}}
-])
+]).pretty()
 ```
 
 ### Exercise 2
@@ -12,7 +12,7 @@
 > db.movies.aggregate([
 	{$match:{"cast":"Mack Sennett"}},
 	{$group:{_id:0,counts:{$sum:1}}}
-  ])
+  ]).pretty()
 ```
 An alternative solution could be
 ```
@@ -20,7 +20,7 @@ An alternative solution could be
 	{$unwind:"$cast"},
 	{$match:{"cast":"Mack Sennett"}},
 	{$group:{_id:0,counts:{$sum:1}}}
-  ])
+  ]).pretty()
 ```
 
 ### Exercise 3
@@ -30,7 +30,7 @@ An alternative solution could be
 	{$unwind:"$cast"},
 	{$group:{_id:"$cast",counts:{$sum:1}}},
 	{$sort:{"counts":-1}}
-  ])
+  ]).pretty()
 ```
 ### Exercise 4
 
@@ -40,7 +40,7 @@ An alternative solution could be
 	{$match:{"cast":{$ne:"and"}}},
 	{$group:{_id:"$cast",counts:{$sum:1}}},
 	{$sort:{"counts":-1}}
-  ])
+  ]).pretty()
 ```
 
 ### Exercise 5
@@ -52,7 +52,7 @@ An alternative solution could be
 	{$group:{_id:"$cast",counts:{$sum:1}}},
 	{$sort:{"counts":-1}},
 	{$out:"top_actors"}
-  ])
+  ]).pretty()
 
 # we can see show the list of the collections for the database
 > show collections
@@ -73,7 +73,7 @@ You can filter more dirty data in the match stages. In this example we inserted 
 	{$project:{_id:0}},
 	{$sort:{"count_movies":-1,"actor":1,"genre":1}},
 	{$out:"actors_and_genres"}
-  ])
+  ]).pretty()
 ```
 ### Exercise 7 
 To create an index use the following command:

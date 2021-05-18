@@ -1,11 +1,17 @@
 # Join
 
-In this step we analyze a different dataset. It should
-be already loaded in the database. You can access
-via command line using the following command
+In this step we analyze a different dataset, **orders**. It should
+be already loaded in the database. 
+Access
+via command line
+```
+$ mongo
+```
+and then use the following command
 ```
 > use orders
 ```
+
 This database has a more complex structure.
 It contains five collection. We can get information
 regarding the collections using the following commands
@@ -27,11 +33,11 @@ manipulation.
 
 In this example we perform a join on the `customerid`
 ```
-> db.items_ordered.aggregate([
+> db.customers.aggregate([
     // first stage in the pipe
     {
         $lookup: {
-            from: "customers",
+            from: "items_ordered",
             localField: "customerid",
             foreignField: "customerid",
             as: "joined"
@@ -41,7 +47,7 @@ In this example we perform a join on the `customerid`
     {
         $unwind: "$joined"
     }   
-])
+]).pretty()
 ```
 
 Tricky enough? 
