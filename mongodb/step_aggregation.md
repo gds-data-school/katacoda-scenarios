@@ -20,7 +20,7 @@ In order to test the `aggregate` pipeline we use
 data collected in the databases already loaded within
 the `mongoimport` command.
 
-**WARING use this command if you haven't completed the previous exercises**
+**WARNING use this command if you haven't completed the previous exercises**
 `$ mongoimport --db=datasets --collection=movies --drop --file=/root/datasets/movies.json `
 **and remember to execute the aggregation commands inside the mongo shell and to switch to the 'datasets' database**
 `> use datasets`
