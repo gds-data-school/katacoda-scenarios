@@ -40,8 +40,11 @@ Hints:
 
 To better see the result, you can only project some fields.
 
+You can pretty print the output with the method **pretty()** applied on the cursor.
+`db.sample_data.find({<match criteria>}, {<projections>}).pretty()`
+
 You can count the result of each find command with the construct
-`db.sample_data.find({<match criteria>}, {<projections>}).count()`.
+`db.sample_data.find({<match criteria>}, {<projections>}).count()`
 
 You should get the following count result for each query:
 1. 3 documents

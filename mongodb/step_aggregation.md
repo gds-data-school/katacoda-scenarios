@@ -25,6 +25,32 @@ the `mongoimport` command.
 **and remember to execute the aggregation commands inside the mongo shell and to switch to the 'datasets' database**
 `> use datasets`
 
+**IMPORTANT**
+First take your time to study the structure of the collection.
+```
+db.movies.find().sort({"year":-1}).pretty()
+```
+Here's a document example:
+```
+{
+        "_id" : ObjectId("5f428f5c6814550f621486c3"),
+        "title" : "Humor Me",
+        "year" : 2018,
+        "cast" : [
+                "Jemaine Clement",
+                "Elliott Gould",
+                "Ingrid Michaelson",
+                "Annie Potts",
+                "Priscilla Lopez",
+                "Bebe Neuwirth",
+                "Maria Dizzia"
+        ],
+        "genres" : [
+                "Comedy"
+        ]
+}
+```
+
 ### Exercise 1
 **Get all the movies with the actor Bruce Willis and with action genre, ordered by year (descending)**
 
