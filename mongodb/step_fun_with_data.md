@@ -33,10 +33,18 @@ the following criteria (in mongodb criteria are also called 'match criteria'):
 3. select apartments in New York;
 4. select apartments in New York and Los Angeles. 
 
+Hints:
+* bedrooms field: "bedrooms" (type integer)
+* price field: "price" (type string with format "NNN.DD")
+* city field: "address.market" (type string)
+
+To better see the result, you can only project some fields.
+
 You can count the result of each find command with the construct
-`db.sample_data.find(<match criteria>).count()`.
+`db.sample_data.find({<match criteria>}, {<projections>}).count()`.
+
 You should get the following count result for each query:
-1. 3
-2. 1
-3. 1
-4. 1
+1. 3 documents
+2. 1 document
+3. 1 document
+4. 1 document
