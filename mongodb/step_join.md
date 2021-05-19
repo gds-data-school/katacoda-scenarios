@@ -47,7 +47,7 @@ In this example we perform a join on the `customerid`
     {
         $unwind: "$joined"
     }   
-]).pretty()
+])
 ```
 
 Tricky enough? 
