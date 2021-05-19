@@ -7,5 +7,6 @@ apt-get update
 apt-get install -y mongodb-org
 systemctl start mongod
 systemctl status mongod
+echo DBQuery.prototype._prettyShell = true >> ~/.mongorc.js
 echo "Done!"
 echo ""
