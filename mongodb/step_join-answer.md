@@ -22,7 +22,7 @@ db.customers.aggregate([
             "joined.item": 1
         }
     }
-]).pretty()
+])
 ```
 
 The resulting *SQL-like* database is the following

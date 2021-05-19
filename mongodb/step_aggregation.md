@@ -21,14 +21,14 @@ data collected in the databases already loaded within
 the `mongoimport` command.
 
 **WARNING use this command if you haven't completed the previous exercises**
-`$ mongoimport --db=datasets --collection=movies --drop --file=/root/datasets/movies.json `{{execute}}
+`mongoimport --db=datasets --collection=movies --drop --file=/root/datasets/movies.json `{{execute}}
 **and remember to execute the aggregation commands inside the mongo shell and to switch to the 'datasets' database**
 `> use datasets`
 
 **IMPORTANT**
 First take your time to study the structure of the collection.
 ```
-db.movies.find().sort({"year":-1}).pretty()
+db.movies.find().sort({"year":-1})
 ```
 Here's a document example:
 ```
