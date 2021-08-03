@@ -1,0 +1,17 @@
+DEPT_ID|DEPT_NAME|MANAGER_ID|ADDRESS|COUNTRY
+001|Administration|E200|10125 Torino|IT
+002|Marketing|E201|58240 Chantenay-Saint-Imbert|FR
+003|Purchasing|E114|10129 Torino|IT
+004|Human Resources|E203|36100 Meunet-Planches|FR
+005|IT|E121|00144 Roma|IT
+006|IT|E103|10300000 Santiago de Chile|CL
+007|Public Relations|E204|10300000 Santiago de Chile|CL
+008|Sales|E145|20006 Madrid|ES
+009|Executive|E100|20006 Madrid|ES
+010|Finance|E108|00152 Roma|IT
+011|Accounting|E205|20006 Madrid|ES
+012|Treasury|E012|40125 Bologna|IT
+013|Corporate Tax|E004|40135 Bologna|IT
+014|Control And Credit|E120|30141 Venezia|IT
+015|Shareholder Services|E107|20125 Milano|IT
+016|Benefits|E112|20125 Milano|IT
