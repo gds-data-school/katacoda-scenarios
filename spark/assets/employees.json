@@ -1,0 +1,15 @@
+{ "employeeCode": "E100", "dept_id": "006", "salary": 20000.00}
+{ "employeeCode": "E102", "dept_id": "006", "salary": 50000.00}
+{ "employeeCode": "E103", "dept_id": "002", "salary": 70000.00}
+{ "employeeCode": "E200", "dept_id": "005", "salary": 65000.00}
+{ "employeeCode": "E201", "dept_id": "005", "salary": 65000.00}
+{ "employeeCode": "E200", "dept_id": "007", "salary": 37000.00}
+{ "employeeCode": "E200", "dept_id": "002", "salary": 49000.00}
+{ "employeeCode": "E200", "dept_id": "002", "salary": 80000.00}
+{ "employeeCode": "E200", "dept_id": "002", "salary": 75000.00}
+{ "employeeCode": "E118", "dept_id": "014", "salary": 39000.00}
+{ "employeeCode": "E209", "dept_id": "011", "salary": 34000.00}
+{ "employeeCode": "E403", "dept_id": "011", "salary": 88000.00}
+{ "employeeCode": "E208", "dept_id": "008", "salary": 42000.00}
+{ "employeeCode": "E223", "dept_id": "006", "salary": 42000.00}
+{ "employeeCode": "E440", "dept_id": "005", "salary": 78000.00}
