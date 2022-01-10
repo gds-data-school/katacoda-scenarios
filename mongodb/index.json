@@ -1,7 +1,7 @@
 {
-  "title": "Enel MongoDB scenario",
+  "title": "Enel Data School - Data Architectures - MongoDB",
   "description": "A tutorial on MongoDB",
-  "difficulty": "Beginner",
+  "difficulty": "Beginner/Intermediate",
   "time": "1 hour",
   "details": {
     "steps": [
