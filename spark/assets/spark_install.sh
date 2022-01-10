@@ -4,9 +4,9 @@ sudo apt-get install -y openjdk-8-jdk
 sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
 
 echo 'Installing Spark...'
-wget https://downloads.apache.org/spark/spark-2.4.7/spark-2.4.7-bin-hadoop2.7.tgz
-tar -xvf spark-2.4.7-bin-hadoop2.7.tgz
-sudo mv spark-2.4.7-bin-hadoop2.7/ /opt/spark
+wget https://downloads.apache.org/spark/spark-2.4.8/spark-2.4.8-bin-hadoop2.7.tgz
+tar -xvf spark-2.4.8-bin-hadoop2.7.tgz
+sudo mv spark-2.4.8-bin-hadoop2.7/ /opt/spark
 
 echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/" >> ~/.profile
 echo "export SPARK_HOME=/opt/spark" >> ~/.profile

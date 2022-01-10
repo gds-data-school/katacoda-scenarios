@@ -1,15 +1,15 @@
-{ "firstName": "Krish", "lastName": "Lee", "jobTitle": "Developer", "employeeCode": "E100", "dept_id": "006", "phoneNumber": "123456", "emailAddress": "krish.lee@learningcontainer.com", "salary": 20000.00}
-{ "firstName": "Devid", "lastName": "Rome", "jobTitle": "Developer", "employeeCode": "E102", "dept_id": "006", "phoneNumber": "1111111", "emailAddress": "devid.rome@learningcontainer.com", "salary": 50000.00}
-{ "firstName": "tin", "lastName": "jonson", "jobTitle": "Program Directory", "employeeCode": "E103", "dept_id": "002", "phoneNumber": "2222221", "emailAddress": "tin.jonson@learningcontainer.com", "salary": 70000.00}
-{ "firstName": "Mario", "lastName": "Rossi", "jobTitle": "Data Engineer", "employeeCode": "E200", "dept_id": "005", "phoneNumber": "2222223", "emailAddress": "mario.rossi@spark.com", "salary": 65000.00}
-{ "firstName": "Laura", "lastName": "Rossi", "jobTitle": "Data Engineer", "employeeCode": "E201", "dept_id": "005", "phoneNumber": "2222224", "emailAddress": "laura.bianchi@spark.com", "salary": 65000.00}
-{ "firstName": "George", "lastName": "Stokes", "jobTitle": "Developer", "employeeCode": "E200", "dept_id": "007", "phoneNumber": "0672111843", "emailAddress": "george.stokes@spark.com", "salary": 37000.00}
-{ "firstName": "Fredericka", "lastName": "Espinoza", "jobTitle": "Developer", "employeeCode": "E200", "dept_id": "002", "phoneNumber": "0701504662", "emailAddress": "frederickaespinoza@spark.com", "salary": 49000.00}
-{ "firstName": "Cade", "lastName": "Perkins", "jobTitle": "Data Architect", "employeeCode": "E200", "dept_id": "002", "phoneNumber": "0122994671", "emailAddress": "cade.perkins@spark.com", "salary": 80000.00}
-{ "firstName": "Ava", "lastName": "Contreras", "jobTitle": "Data Engineer", "employeeCode": "E200", "dept_id": "002", "phoneNumber": "0748534253", "emailAddress": "ava.contreras@spark.com", "salary": 75000.00}
-{ "firstName": "Quin", "lastName": "Suarez", "jobTitle": "Junior HR", "employeeCode": "E118", "dept_id": "014", "phoneNumber": "0770903586", "emailAddress": "Quin.Suarez@spark.com", "salary": 39000.00}
-{ "firstName": "Lisandra", "lastName": "Waters", "jobTitle": "Web Designer", "employeeCode": "E209", "dept_id": "011", "phoneNumber": "0288626416", "emailAddress": "Lisandra.Waters@spark.com", "salary": 34000.00}
-{ "firstName": "Bethany", "lastName": "Byers", "jobTitle": "Project manager", "employeeCode": "E403", "dept_id": "011", "phoneNumber": "0942725362", "emailAddress": "Bethany.Byers@spark.com", "salary": 88000.00}
-{ "firstName": "Mark", "lastName": "Spencer", "jobTitle": "DevOps Engineer", "employeeCode": "E208", "dept_id": "008", "phoneNumber": "0263584444", "emailAddress": "Mark.Spencer@spark.com", "salary": 42000.00}
-{ "firstName": "Sandra", "lastName": "Houston", "jobTitle": "DevOps Engineer", "employeeCode": "E223", "dept_id": "006", "phoneNumber": "011102291", "emailAddress": "Sandra.Houston@spark.com", "salary": 42000.00}
-{ "firstName": "Francesco", "lastName": "Verdi", "jobTitle": "Sales Manager", "employeeCode": "E440", "dept_id": "005", "phoneNumber": "02334392", "emailAddress": "francesco.verdi@spark.com", "salary": 78000.00}
+{ "employeeCode": "E100", "dept_id": "006", "salary": 20000.00}
+{ "employeeCode": "E102", "dept_id": "006", "salary": 50000.00}
+{ "employeeCode": "E103", "dept_id": "002", "salary": 70000.00}
+{ "employeeCode": "E200", "dept_id": "005", "salary": 65000.00}
+{ "employeeCode": "E201", "dept_id": "005", "salary": 65000.00}
+{ "employeeCode": "E200", "dept_id": "007", "salary": 37000.00}
+{ "employeeCode": "E200", "dept_id": "002", "salary": 49000.00}
+{ "employeeCode": "E200", "dept_id": "002", "salary": 80000.00}
+{ "employeeCode": "E200", "dept_id": "002", "salary": 75000.00}
+{ "employeeCode": "E118", "dept_id": "014", "salary": 39000.00}
+{ "employeeCode": "E209", "dept_id": "011", "salary": 34000.00}
+{ "employeeCode": "E403", "dept_id": "011", "salary": 88000.00}
+{ "employeeCode": "E208", "dept_id": "008", "salary": 42000.00}
+{ "employeeCode": "E223", "dept_id": "006", "salary": 42000.00}
+{ "employeeCode": "E440", "dept_id": "005", "salary": 78000.00}
